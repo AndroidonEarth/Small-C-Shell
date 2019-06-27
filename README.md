@@ -53,11 +53,11 @@ Compile the run program with the command line:
 
 10.) No error checking is performed on the syntax of the command line.
 
-11.) Blank lines and comments are allowed.
+# Blank lines and comments
 
-11a.) Any line that begins with a # character is a comment and is ignored.
+Any line that begins with a # character is a comment and is ignored.
  
-11b.) A blank line does nothing.
+A blank line does nothing.
  
-11c.) If a blank line or a comment line is received, the shell simply re-prompts for another command.
+If a blank line or a comment line is received, the shell simply re-prompts for another command.
  
