@@ -1,17 +1,19 @@
 # Small-C-Shell
-A simple shell program written with C
+A simple shell program written with C. An exercise in process management.
 
 # Synopsis
 A basic shell to run command line instructions and return results similar to other shells, but without many of their fancier features.
  
 Allows for redirection of standard input and standard output, and supports both foreground and background processes (controllable by the command line and by receiving signals).
 
-Supports three built in commands: 
+Supports three built-in commands: 
 
     exit
     cd
     status
     
+Any commands are simply executed using execvp().
+
 Also supports comments, which are lines beginning with the # character.
 
 # Instructions
