@@ -12,7 +12,7 @@ Supports three built-in commands:
     cd
     status
     
-Any commands are simply executed using execvp().
+Any other commands are simply executed using execvp().
 
 Also supports comments, which are lines beginning with the # character.
 
