@@ -32,18 +32,32 @@ Compile the run program with the command line:
  
     command [arg1 arg2 ...] [< input_file] [> output_file] [&]
 
-NOTE: The command must be made up of words separated by spaces. More rules about commands are as follows:
+# Command line rules
+1.) The command must be made up of words separated by spaces.
 
-    The special symbols <, >, and & are recognized, but they must be surrounded by spaces like other words.
-    If the command is to be executed in the background, the last word must be &.
-    If the & character appears anywhere else, it is treated like normal text.
-    If the standard input or output is to be redirected, the > or < words followed by a filename word must appear after all the arguments. 
-    Input redirection can appear before or after output redirection.
-    Does not support any quoting - arguments with spaces in them are not possible.
-    The common shell operater pipe | is also not available.
-    Supports command lines with a maximum length of 2048 characters, and a maximum of 512 arguments.
-    No error checking is performed on the syntax of the command line.
-    Blank lines and comments are allowed.
-     - Any line that begins with a # character is a comment and is ignored.
-     - A blank line does nothing.
-     - If a blank line or a comment line is received, the shell simply re-prompts for another command.
+2.) The special symbols <, >, and & are recognized, but they must be surrounded by spaces like other words.
+
+3.) If the command is to be executed in the background, the last word must be &.
+
+4.) If the & character appears anywhere else, it is treated like normal text.
+
+5.) If the standard input or output is to be redirected, the > or < words followed by a filename word must appear after all the arguments. 
+
+6.) Input redirection can appear before or after output redirection.
+
+7.) Does not support any quoting - arguments with spaces in them are not possible.
+
+8.) The common shell operater pipe | is also not available.
+
+9.) Supports command lines with a maximum length of 2048 characters, and a maximum of 512 arguments.
+
+10.) No error checking is performed on the syntax of the command line.
+
+11.) Blank lines and comments are allowed.
+
+11a.) Any line that begins with a # character is a comment and is ignored.
+ 
+11b.) A blank line does nothing.
+ 
+11c.) If a blank line or a comment line is received, the shell simply re-prompts for another command.
+ 
