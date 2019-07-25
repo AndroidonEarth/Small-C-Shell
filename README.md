@@ -1,5 +1,5 @@
 # Small-C-Shell
-A shell program written with C.
+A shell program written with Raw C.
 
 # Synopsis
 A basic shell to run command line instructions and return results similar to other shells, but without many of their fancier features.
