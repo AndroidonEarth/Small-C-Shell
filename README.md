@@ -1,5 +1,5 @@
 # Small-C-Shell
-A simple shell program written with C. An exercise in process management.
+A shell program written with C.
 
 # Synopsis
 A basic shell to run command line instructions and return results similar to other shells, but without many of their fancier features.
